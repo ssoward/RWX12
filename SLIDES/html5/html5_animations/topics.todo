@@ -1,0 +1,39 @@
+- HTML5 Animations - Building True Richness on the Web
+   Venkat Subramaniam
+   Email: venkats@agiledeveloper.com
+   Twitter: @venkat_s
+   http://www.agiledeveloper.com downloads link
+   
+HTML5 and RichWeb:
+- What was lacking
+- What does Canvas provide
+
+Creating a Canvas:
+- canvas element and browsers
+- canvas and context
+
+Using a Context:
+- drawing text - fillText, font, textAlign('center'), fillStyle ('orange')
+- transparency - globalAlpha
+
+Drawing on canvas:
+- drawing lines - beginPath, stroke, strokeStyle, lineWidth
+  - arc(x, y, r, startAnglePI, endAnglePI, boolAntiClockwise)
+  - angles 0, 0.5PI, 1PI, 1.5PI, 2PI
+  - point on a circle cx + r * cos(angle), cy + r * sin(angle)
+- filling shapes: fillStyle ('blue'), fill
+- save and restore
+
+Events:
+- mouse events
+  - mouseEvent, mouseEvent.clientX, mouseEvent.clientY
+  - document.onmouseup, document.onmousemove
+  - document.addEventListener('mouseup', draw);
+  - offsetLeft and OffsetTop
+  - preventDefault()
+- touch events
+
+Animation:
+- let's create a simple game
+
+Summary:

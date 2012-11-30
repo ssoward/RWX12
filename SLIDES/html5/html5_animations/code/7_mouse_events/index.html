@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <p>Drag mouse over and click within the canvas</p>
+  <canvas id="mycanvas" width="500" height="400">If you see this message, sorry canvas not supported</canvas>
+  <head>
+    <script src="draw.js"></script>
+    <script>
+      var canvas = document.getElementById('mycanvas');
+      document.onmouseup = function(mouseEvent) {
+        draw(canvas, {x: mouseEvent.clientX, y: mouseEvent.clientY});
+        mouseEvent.preventDefault();
+      }
+      
+      document.addEventListener('mousemove', function(mouseEvent) {
+        display(canvas, {x: mouseEvent.clientX, y: mouseEvent.clientY});
+        mouseEvent.preventDefault();
+      });
+    </script>
+  </head>
+</html>
